@@ -51,7 +51,11 @@ class Settings(BaseSettings):
 
     # Frontend / Static paths
     FRONTEND_DIR: Path = Field(
-        default=Path("frontend"),
+        default_factory=lambda: (
+            Path(__file__).resolve().parent.parent.parent.parent / "frontend"
+            if (Path(__file__).resolve().parent.parent.parent.parent / "frontend").exists()
+            else Path("frontend")
+        ),
         description="Directory containing frontend static assets",
     )
 

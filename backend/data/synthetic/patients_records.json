@@ -1,0 +1,134 @@
+[
+  {
+    "patient_name": "Alex Rivera",
+    "mrn": "SYN-PAT-001",
+    "dob": "1980-04-12",
+    "gender": "male",
+    "record_date": "2025-01-10",
+    "record_type": "imaging",
+    "title": "PA and Lateral Chest Radiograph",
+    "text": "CLINICAL INDICATION: 44-year-old male presenting with persistent productive cough, pleuritic chest pain, and low-grade fever for 4 days.\n\nFINDINGS: Lungs demonstrate focal patchy consolidation in the right middle lobe, consistent with community-acquired pneumonia. No significant pleural effusion or pneumothorax identified. Cardiac silhouette is normal in size and contour. Mediastinum and hilar structures are unremarkable.\n\nIMPRESSION: Right middle lobe pneumonia. Recommend clinical correlation and follow-up imaging post-treatment.",
+    "encounter_id": "ENC-2025-001"
+  },
+  {
+    "patient_name": "Alex Rivera",
+    "mrn": "SYN-PAT-001",
+    "dob": "1980-04-12",
+    "gender": "male",
+    "record_date": "2025-01-10",
+    "record_type": "lab",
+    "title": "Complete Blood Count with Differential",
+    "text": "TEST: Complete Blood Count (CBC)\n- White Blood Cell (WBC): 14.8 x10^3/uL [High, Ref: 4.5-11.0]\n- Red Blood Cell (RBC): 4.65 x10^6/uL [Normal, Ref: 4.3-5.9]\n- Hemoglobin: 14.2 g/dL [Normal, Ref: 13.5-17.5]\n- Hematocrit: 42.1% [Normal, Ref: 38.8-50.0]\n- Platelet Count: 285 x10^3/uL [Normal, Ref: 150-450]\n- Absolute Neutrophil Count: 11.2 x10^3/uL [High, Ref: 1.8-7.7]\nINTERPRETATION: Leukocytosis with neutrophilia, supporting acute bacterial infection in correlation with right middle lobe infiltrate.",
+    "encounter_id": "ENC-2025-001"
+  },
+  {
+    "patient_name": "Alex Rivera",
+    "mrn": "SYN-PAT-001",
+    "dob": "1980-04-12",
+    "gender": "male",
+    "record_date": "2025-01-15",
+    "record_type": "clinical_note",
+    "title": "Outpatient Follow-Up Progress Note",
+    "text": "SUBJECTIVE: Patient returns for 5-day follow-up of right middle lobe pneumonia. Reports marked improvement in cough and defervescence. Denies dyspnea at rest.\nOBJECTIVE: Afebrile. SpO2 98% on ambient air. Right lung auscultation reveals resolving coarse crackles with improved air movement.\nASSESSMENT: Resolving right middle lobe bacterial pneumonia; patient tolerating amoxicillin-clavulanate course.\nPLAN: Complete 7-day antibiotic course. Return to clinic if fever recurs.",
+    "encounter_id": "ENC-2025-002"
+  },
+  {
+    "patient_name": "Alex Rivera",
+    "mrn": "SYN-PAT-001",
+    "dob": "1980-04-12",
+    "gender": "male",
+    "record_date": "2025-01-10",
+    "record_type": "imaging",
+    "title": "PA and Lateral Chest Radiograph",
+    "text": "CLINICAL INDICATION: 44-year-old male presenting with persistent productive cough, pleuritic chest pain, and low-grade fever for 4 days.\n\nFINDINGS: Lungs demonstrate focal patchy consolidation in the right middle lobe, consistent with community-acquired pneumonia. No significant pleural effusion or pneumothorax identified. Cardiac silhouette is normal in size and contour. Mediastinum and hilar structures are unremarkable.\n\nIMPRESSION: Right middle lobe pneumonia. Recommend clinical correlation and follow-up imaging post-treatment.",
+    "encounter_id": "ENC-2025-001"
+  },
+  {
+    "patient_name": "Jordan Taylor",
+    "mrn": "SYN-PAT-002",
+    "dob": "1965-11-23",
+    "gender": "F",
+    "record_date": "2024-11-04",
+    "record_type": "clinical_note",
+    "title": "Cardiology Consultation Note",
+    "text": "HISTORY: 59-year-old female with hypertension and hyperlipidemia referred for episodic exertional chest tightness over the past two months. Symptoms occur when climbing stairs and resolve with rest within 5 minutes.\nPHYSICAL EXAM: BP 138/84 mmHg, HR 72 bpm regular. S1/S2 normal without murmurs, rubs, or gallops. Lungs clear bilaterally. No peripheral edema.\nASSESSMENT: Exertional angina pectoris, likely stable ischemic heart disease.\nPLAN: Order outpatient myocardial perfusion SPECT stress test. Initiate low-dose aspirin 81 mg daily and sublingual nitroglycerin PRN.",
+    "encounter_id": "ENC-2024-104"
+  },
+  {
+    "patient_name": "Jordan Taylor",
+    "mrn": "SYN-PAT-002",
+    "dob": "1965-11-23",
+    "gender": "F",
+    "record_date": "2024-11-12",
+    "record_type": "imaging",
+    "title": "Nuclear Medicine Myocardial Perfusion SPECT",
+    "text": "PROCEDURE: Rest and exercise Tc-99m sestamibi myocardial perfusion imaging.\nFINDINGS: Stress images demonstrate a mild reversible perfusion defect in the basal to mid anterolateral wall of the left ventricle. Gated SPECT shows resting left ventricular ejection fraction of 58% with normal wall motion.\nIMPRESSION: Stress-induced myocardial ischemia involving the anterolateral distribution, without evidence of prior myocardial infarction. Correlate clinically for coronary angiogram.",
+    "encounter_id": "ENC-2024-112"
+  },
+  {
+    "patient_name": "Casey Morgan",
+    "mrn": "SYN-PAT-003",
+    "dob": "",
+    "gender": "nonbinary",
+    "record_date": "2025-02-01",
+    "record_type": "lab",
+    "title": "Fasting Lipid Panel",
+    "text": "TEST: Fasting Lipid Profile (Synthetic Demonstration)\n- Total Cholesterol: 242 mg/dL [High, Ref: <200]\n- Triglycerides: 198 mg/dL [Borderline High, Ref: <150]\n- HDL Cholesterol: 42 mg/dL [Low for female/Normal for male, Ref: >40]\n- LDL Cholesterol (calculated): 160 mg/dL [High, Ref: <100]\nCOMMENT: Fasting state confirmed (12 hours). Elevated LDL cholesterol and triglycerides suggest moderate cardiovascular risk profile.",
+    "encounter_id": "ENC-2025-201"
+  },
+  {
+    "patient_name": "Casey Morgan",
+    "mrn": "SYN-PAT-003",
+    "dob": "",
+    "gender": "nonbinary",
+    "record_date": "2025-02-03",
+    "record_type": "pathology",
+    "title": "Dermatopathology Biopsy Report",
+    "text": "SPECIMEN: Punch biopsy, left superior shoulder lesion measuring 0.6 cm.\nMICROSCOPIC DESCRIPTION: Sections show a compound melanocytic proliferation with symmetrical architecture. Nests of bland melanocytes are located at the dermo-epidermal junction and extend into the superficial dermis with good maturation. No significant cellular atypia, pagetoid spread, or dermal mitoses.\nDIAGNOSIS: Compound dysplastic nevus, mild architectural disorder, margins clear.",
+    "encounter_id": "ENC-2025-203"
+  },
+  {
+    "patient_name": "Taylor Chen",
+    "mrn": "SYN-PAT-004",
+    "dob": "03/15/1992",
+    "gender": "male",
+    "record_date": "2024-12-20",
+    "record_type": "discharge_summary",
+    "title": "Inpatient Hospital Discharge Summary",
+    "text": "ADMISSION DIAGNOSIS: Acute appendicitis with localized peritonitis.\nDISCHARGE DIAGNOSIS: Status post laparoscopic appendectomy for acute suppurative appendicitis.\nHOSPITAL COURSE: 32-year-old male admitted through the ED with acute right lower quadrant pain, positive McBurney point tenderness, and leukocytosis. Underwent uncomplicated laparoscopic appendectomy on hospital day 1. Postoperative course uneventful. Diet advanced to regular without nausea. Tolerating oral pain medications.\nDISCHARGE MEDICATIONS: Acetaminophen 500 mg q6h PRN pain, Ibuprofen 400 mg q8h PRN.\nFOLLOW-UP: Surgical clinic in 2 weeks for wound check.",
+    "encounter_id": "ENC-2024-401"
+  },
+  {
+    "patient_name": "Morgan Bailey",
+    "mrn": "SYN-PAT-005",
+    "dob": "1978-08-30",
+    "gender": "unknown",
+    "record_date": "2025-01-28",
+    "record_type": "imaging",
+    "title": "CT Abdomen and Pelvis with IV Contrast",
+    "text": "TECHNIQUE: Helical axial imaging of abdomen and pelvis with intravenous iodinated contrast.\nFINDINGS: Multiple sigmoid diverticula noted with focal colonic wall thickening and adjacent mild pericolic fat stranding. No evidence of free air, abscess collection, or bowel obstruction. Liver, gallbladder, spleen, and pancreas appear unremarkable.\nIMPRESSION: Acute uncomplicated sigmoid diverticulitis. Recommend outpatient oral antibiotic therapy and clinical monitoring.",
+    "encounter_id": "ENC-2025-501"
+  },
+  {
+    "patient_name": "Morgan Bailey",
+    "mrn": "SYN-PAT-005",
+    "dob": "1978-08-30",
+    "gender": "unknown",
+    "record_date": "2025-01-28",
+    "record_type": "lab",
+    "title": "Basic Metabolic Panel (BMP)",
+    "text": "TEST: Basic Metabolic Panel\n- Sodium: 139 mmol/L [Normal, Ref: 136-145]\n- Potassium: 4.1 mmol/L [Normal, Ref: 3.5-5.1]\n- Chloride: 102 mmol/L [Normal, Ref: 98-107]\n- CO2: 24 mmol/L [Normal, Ref: 22-29]\n- Blood Urea Nitrogen (BUN): 16 mg/dL [Normal, Ref: 7-20]\n- Serum Creatinine: 0.92 mg/dL [Normal, Ref: 0.70-1.30]\n- Glucose: 98 mg/dL [Normal, Ref: 70-99]\nINTERPRETATION: Normal electrolyte and renal function profiles.",
+    "encounter_id": "ENC-2025-501"
+  },
+  {
+    "patient_name": "Alex Rivera",
+    "mrn": "SYN-PAT-001",
+    "dob": "1980-04-12",
+    "gender": "male",
+    "record_date": "2025-02-14",
+    "record_type": "imaging",
+    "title": "Follow-Up PA Chest Radiograph",
+    "text": "CLINICAL INDICATION: 44-year-old male, 4-week follow-up for prior right middle lobe pneumonia.\n\nFINDINGS: Compared with radiograph dated 2025-01-10, there is complete resolution of the previously described right middle lobe consolidation. No new infiltrates or pleural effusions. Costophrenic angles are sharp. Cardiomediastinal contour is normal.\n\nIMPRESSION: Complete radiographic clearing of pneumonia.",
+    "encounter_id": "ENC-2025-003"
+  }
+]

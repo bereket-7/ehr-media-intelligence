@@ -1,0 +1,79 @@
+PATIENT: Jamie Vance
+MRN: SYN-PAT-011
+DOB: 1963-07-22
+GENDER: female
+DATE: 2025-01-18
+TYPE: clinical_note
+TITLE: Pulmonary Specialist Consultation
+NOTE:
+HISTORY OF PRESENT ILLNESS: 61-year-old female former smoker (25 pack-years, quit 8 years ago) referred for progressive exertional shortness of breath and morning cough productive of white sputum.
+PULMONARY FUNCTION TESTING (Synthetic values):
+- FEV1: 1.82 L (68% of predicted value)
+- FVC: 2.95 L (84% of predicted value)
+- FEV1/FVC ratio: 61.7% [Consistent with airflow obstruction]
+- Post-bronchodilator change: +6% (non-reversible)
+ASSESSMENT: Chronic Obstructive Pulmonary Disease (COPD), GOLD Stage 2, moderate airflow limitation.
+PLAN: Initiate tiotropium bromide 18 mcg inhalation once daily. Prescribe albuterol HFA inhaler for rescue use. Counsel regarding yearly influenza and pneumococcal vaccination.
+
+---
+PATIENT: Quinn Harper
+MRN: SYN-PAT-012
+DOB: 1990-10-10
+GENDER: male
+DATE: 2024-11-20
+TYPE: pathology
+TITLE: Colonoscopy Polypectomy Surgical Pathology
+NOTE:
+SPECIMEN RECEIVED: Polyp, ascending colon, cold snare excision.
+GROSS DESCRIPTION: Single piece of pink-tan lobulated tissue measuring 0.5 x 0.4 x 0.3 cm.
+HISTOPATHOLOGIC EVALUATION:
+Sections show colonic mucosa with a tubular architecture exhibiting low-grade epithelial dysplasia. Nuclei are elongated, hyperchromatic, and pseudostratified, confined to the basal half of the cells. No high-grade dysplasia or invasive adenocarcinoma identified. Resection margin is free of dysplastic changes.
+DIAGNOSIS: Tubular adenoma, low-grade dysplasia, completely excised. Recommend routine surveillance colonoscopy in 5-7 years per guidelines.
+
+---
+PATIENT: Skyler Hayes
+MRN: SYN-PAT-013
+DOB: 1984-03-03
+GENDER: female
+DATE: 2025-02-02
+TYPE: clinical_note
+TITLE: Hospital Day 3 Internal Medicine Progress Note
+NOTE:
+SUBJECTIVE: 40-year-old female admitted for acute uncomplicated pyelonephritis. Patient reports complete resolution of left flank pain and chills. No dysuria or nausea today. Tolerating oral intake well.
+VITAL SIGNS: Temp 36.8 C, BP 118/72 mmHg, HR 68 bpm, SpO2 99% room air.
+PHYSICAL EXAM: Costovertebral angle tenderness has completely resolved. Abdomen is soft, non-tender.
+LABS: Urine culture from admission finalized growing Escherichia coli >100,000 CFU/mL, susceptible to fluoroquinolones and cephalosporins. Serum creatinine stable at 0.78 mg/dL.
+PLAN: Transition from IV ceftriaxone to oral ciprofloxacin 500 mg BID to complete a 7-day total course. Discharging home today with outpatient primary care follow-up in 1 week.
+
+---
+PATIENT: Logan Thorne
+MRN: SYN-PAT-001
+DOB: 1991-05-19
+GENDER: male
+DATE: 2025-02-05
+TYPE: clinical_note
+TITLE: Primary Care Visit with Identifier Conflict
+NOTE:
+NOTE: This record intentionally uses MRN SYN-PAT-001 (belonging to Alex Rivera) to verify identity conflict detection, quarantine logging, and patient safety safeguards.
+SUBJECTIVE: 33-year-old male presents for routine wellness evaluation and seasonal allergy management.
+OBJECTIVE: Vital signs within normal limits. HEENT: Mild pale boggy turbinates. Lungs clear.
+ASSESSMENT: Allergic rhinitis.
+PLAN: Cetirizine 10 mg daily.
+
+---
+PATIENT: Rowan Ellis
+MRN: SYN-PAT-015
+DOB: 1950-01-30
+GENDER: m
+DATE: 2024-12-15
+TYPE: imaging
+TITLE: Complete Transthoracic Echocardiogram
+NOTE:
+MEASUREMENTS & FINDINGS:
+- Left Ventricle: Normal cavity dimensions. Concentric left ventricular hypertrophy with interventricular septal thickness of 1.3 cm (Ref: 0.6-1.0 cm).
+- Left Ventricular Ejection Fraction (LVEF): Estimated visually and by Simpson's biplane method at 50-55%.
+- Diastolic Function: Grade I diastolic dysfunction (impaired relaxation pattern).
+- Valvular Assessment: Mild aortic valve sclerosis without significant stenosis (peak gradient 12 mmHg). Mild mitral regurgitation.
+- Right Ventricle: Normal size and systolic function (TAPSE 2.1 cm).
+- Pericardium: No pericardial effusion.
+IMPRESSION: Preserved systolic ejection fraction with mild concentric LV hypertrophy and Grade 1 diastolic dysfunction, compatible with chronic hypertensive heart disease.

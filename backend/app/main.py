@@ -10,6 +10,7 @@ from fastapi.staticfiles import StaticFiles
 
 from app.api.v1 import api_v1_router
 from app.api.v1.routes.health import router as root_health_router
+from app.api.v1.routes.ingest import router as root_ingest_router
 from app.core.config import settings
 from app.core.logging import configure_logging, get_logger
 
@@ -58,6 +59,7 @@ def create_application() -> FastAPI:
 
     # Root health endpoint (per docs/API_SPEC.md: GET /health)
     app.include_router(root_health_router, tags=["Health"])
+    app.include_router(root_ingest_router, tags=["Ingestion"])
 
     # API v1 routes
     app.include_router(api_v1_router)
