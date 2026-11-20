@@ -7,3 +7,6 @@ pydantic-settings==2.16.3
 python-dotenv==1.2.4
 httpx==0.28.1
 pytest==9.2.0
+
+# Milestone 1 Ingestion Dependencies
+python-multipart==0.0.34
