@@ -1,5 +1,6 @@
 """Ingestion service coordinating parsing, cleaning, conflict quarantine, and deduplication."""
 from typing import Dict, List, Set
+from app.core.logging import get_logger
 from app.ingestion.cleaner import DataCleaner
 from app.ingestion.parsers import CsvParser, JsonParser, PlainTextParser
 from app.models.canonical import (
@@ -10,6 +11,11 @@ from app.models.canonical import (
     MediaRecord,
     PatientIdentity,
 )
+from app.repositories.sqlite_repository import repository
+from app.services.patient_service import patient_service
+from app.services.search_service import search_service
+
+logger = get_logger(__name__)
 
 
 class IngestionService:
@@ -27,6 +33,7 @@ class IngestionService:
         self.seen_fingerprints.clear()
         self.patient_identities.clear()
         self.patient_primary_names.clear()
+        repository.clear_all()
 
     def ingest_file(self, content: str, filename: str) -> IngestResult:
         """Parse, clean, deduplicate, and validate records from raw file content."""
@@ -154,7 +161,7 @@ class IngestionService:
                 text=clean_text,
             )
 
-            if fingerprint in self.seen_fingerprints:
+            if fingerprint in self.seen_fingerprints or repository.has_fingerprint(fingerprint):
                 result.duplicates += 1
                 result.warnings.append(
                     f"Record at index {idx} is an exact duplicate of a previously indexed record; suppressed."
@@ -201,6 +208,17 @@ class IngestionService:
             result.accepted += 1
             result.record_ids.append(record_id)
             result.audit_log.extend(audit)
+
+        # 9. Persist newly accepted records, map FHIR resources, and build Bundles
+        if result.record_ids:
+            new_records = [self.records[rid] for rid in result.record_ids if rid in self.records]
+            patient_service.persist_ingestion_data(new_records, self.patient_identities)
+
+            # 10. Index newly persisted records into vector storage for semantic search
+            try:
+                search_service.index_records(new_records)
+            except Exception as exc:
+                logger.error("Error during vector indexing of ingested records: %s", exc)
 
         return result
 

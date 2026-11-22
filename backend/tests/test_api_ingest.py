@@ -46,7 +46,15 @@ def test_api_ingest_csv_synthetic_fixture(client: TestClient) -> None:
 
 
 def test_api_ingest_txt_synthetic_fixture(client: TestClient) -> None:
-    """Verify ingestion of the plain-text notes dataset."""
+    """Verify ingestion of the plain-text notes dataset and cross-file identity conflict quarantine."""
+    # First ingest patients_records.json so SYN-PAT-001 is mapped to Alex Rivera
+    json_path = DATA_DIR / "patients_records.json"
+    with open(json_path, "rb") as f:
+        client.post(
+            "/ingest",
+            files={"file": ("patients_records.json", f, "application/json")},
+        )
+
     txt_path = DATA_DIR / "notes.txt"
     assert txt_path.exists(), f"Synthetic TXT fixture not found at {txt_path}"
 
@@ -59,7 +67,7 @@ def test_api_ingest_txt_synthetic_fixture(client: TestClient) -> None:
     assert response.status_code == status.HTTP_200_OK
     data = response.json()
     assert data["accepted"] >= 4
-    # The conflicting Logan Thorne record triggers identity quarantine
+    # The conflicting Logan Thorne record triggers identity quarantine against Alex Rivera's MRN
     assert data["quarantined"] >= 1
     assert any("Identity conflict" in w for w in data["warnings"])
 

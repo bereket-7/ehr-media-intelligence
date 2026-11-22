@@ -10,3 +10,7 @@ pytest==9.2.0
 
 # Milestone 1 Ingestion Dependencies
 python-multipart==0.0.34
+
+# Milestone 2 FHIR Dependencies
+fhir.resources==8.3.0
+fhir-core==1.1.12
