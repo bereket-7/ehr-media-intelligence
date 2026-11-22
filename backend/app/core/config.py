@@ -36,17 +36,37 @@ class Settings(BaseSettings):
     )
     LLM_PROVIDER: str = Field(
         default="offline_fallback",
-        description="LLM provider name or 'offline_fallback'",
+        description="LLM provider name: 'openai' or 'offline_fallback'",
     )
     LLM_MODEL: str = Field(
-        default="none",
+        default="gpt-4o-mini",
         description="Model identifier for LLM provider",
+    )
+    LLM_BASE_URL: str = Field(
+        default="https://api.openai.com/v1",
+        description="Base URL for LLM API calls",
+    )
+    LLM_TIMEOUT_SECONDS: float = Field(
+        default=15.0,
+        description="Timeout in seconds for external LLM API requests",
+    )
+    SUMMARY_PROMPT_VERSION: str = Field(
+        default="v1.0",
+        description="Version string for summary prompt template used in cache keys",
     )
 
     # Semantic search settings
     EMBEDDING_MODEL_NAME: str = Field(
         default="all-MiniLM-L6-v2",
         description="HuggingFace model name for sentence embeddings",
+    )
+    CHROMA_COLLECTION_NAME: str = Field(
+        default="clinical_records",
+        description="Collection name for clinical record vector storage",
+    )
+    VECTOR_STORE_BACKEND: str = Field(
+        default="auto",
+        description="Vector store backend: 'auto', 'chromadb', or 'embedded'",
     )
 
     # Frontend / Static paths

@@ -117,12 +117,12 @@ class PlainTextParser:
         r"^(PATIENT|NAME|MRN|DOB|GENDER|DATE|RECORD_DATE|TYPE|CATEGORY|TITLE|ENCOUNTER_ID)\s*:\s*(.*)$",
         re.IGNORECASE,
     )
-    SEPARATOR_PATTERN = re.compile(r"^(?:-{3,}|={3,}|RECORD\s*\d*)$", re.MULTILINE)
+    SEPARATOR_PATTERN = re.compile(r"^(?:-{3,}|={3,}|RECORD\s*\d*)\r?$", re.MULTILINE)
 
     @classmethod
     def parse(cls, content: str, filename: str = "data.txt") -> List[Tuple[int, Dict[str, Any]]]:
         """Parse structured plain-text file into indexed dictionary records."""
-        cleaned_content = content.lstrip("\ufeff").strip()
+        cleaned_content = content.replace("\r\n", "\n").replace("\r", "\n").lstrip("\ufeff").strip()
         if not cleaned_content:
             return []
 
