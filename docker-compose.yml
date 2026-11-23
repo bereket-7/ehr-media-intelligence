@@ -1,0 +1,33 @@
+services:
+  ehr-intelligence:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ehr-intelligence-api
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=development
+      - DEBUG=true
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - SQLITE_DB_PATH=/app/data/ehr_intelligence.db
+      - CHROMA_PERSIST_DIRECTORY=/app/data/chroma_db
+      - FRONTEND_DIR=/app/frontend
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - LLM_PROVIDER=${LLM_PROVIDER:-offline_fallback}
+      - LLM_MODEL=${LLM_MODEL:-gpt-4o-mini}
+      - VECTOR_STORE_BACKEND=auto
+    volumes:
+      - ehr-data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+
+volumes:
+  ehr-data:
+    name: ehr-intelligence-data
