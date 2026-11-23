@@ -291,3 +291,4 @@ Key technical documentation and assessment deliverables are available in the `do
 - [API Specification](docs/API_SPEC.md) — REST API endpoints, request formats, and response schemas.
 - [FHIR R4 Mapping](docs/FHIR_MAPPING.md) — FHIR resource mapping and validation approach.
 - [Testing Documentation](docs/TESTING.md) — Testing strategy, covered scenarios, and execution instructions.
+- [Application Screenshots](docs/screenshots/) — Screenshots demonstrating key application features.
